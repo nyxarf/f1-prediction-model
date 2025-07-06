@@ -61,3 +61,5 @@ Integrate Real-Time Inference
 
 Author: Arfa Ahmed Ansari
 Currently working on improving accuracy and further training.
+
+PS: ChatGPT helped me to structure this project. Structure will be optimized in future.
