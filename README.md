@@ -18,27 +18,6 @@ It automatically collects race data, preprocesses it, and trains ML models for l
 4. **ML Model Training:**  
    Trains a Random Forest Regressor to predict lap times using race features.
 
----
-
-##  Project Structure:
-F1 PREDICTION MODEL/
-│
-├── data/ # Contains race data CSVs and ML models
-│
-├── src/
-│ └── data_collection/
-│ ├── fetch_all_races.py # Fetches laps from all races
-│ ├── combine_race_laps.py # Combines race data into one file
-│ ├── preprocess_ml_data.py # Preprocesses dataset for ML
-│ └── train_ml_model.py # Trains ML Model for lap time
-│
-├── cache/ # FastF1 Cache (Required for API)
-│
-├── README.md # Project Documentation
-├── requirements.txt # Python dependencies
-└── .gitignore # Git ignored files
-
----
 
 ##  Tech Stack:
 - Python 
@@ -53,8 +32,10 @@ F1 PREDICTION MODEL/
 ```bash
 git clone https://github.com/nyxarf/f1-prediction-model.git
 cd f1-prediction-model
+```
 
 then:
+```bash
 pip install -r requirements.txt
  Run pipeline: # Fetch races
 python src/data_collection/fetch_all_races.py
@@ -67,6 +48,7 @@ python src/data_collection/preprocess_ml_data.py
 
 # Train ML model
 python src/data_collection/train_ml_model.py
+```
 
 Future Plans:
 Improve ML models (XGBoost, Deep Learning)
@@ -78,15 +60,4 @@ Interactive Dashboard
 Integrate Real-Time Inference
 
 Author: Arfa Ahmed Ansari
-
----
-
-##  STEP 2: Add `.gitignore`
-Paste this in `.gitignore`:
-```gitignore
-__pycache__/
-.cache/
-cache/
-*.pkl
-*.csv
-.env
+Currently working on improving accuracy and further training.
